@@ -12,6 +12,12 @@
 | `map/` | 2D 占据格栅图产物 `map.pgm` + `map.yaml`，及详细说明 `map/README.md` |
 | `scripts/` | 点云 → 2D 地图的处理与发布脚本 |
 
+## 点云 3D 图
+
+![3D 点云图](map/pointcloud_3d.png)
+
+Livox Mid-360 建图得到的 3D 点云（按高度着色）。查看方法与更多说明见 [`map/README.md`](map/README.md)。
+
 ## 快速开始
 
 完整流程（建图 → 清洗点云 → 降采样 → 生成 2D 地图 → 发布）见 [`map/README.md`](map/README.md)。

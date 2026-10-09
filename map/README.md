@@ -2,6 +2,12 @@
 
 Livox Mid-360 点云 → **2D 占据格栅地图** 的最终产物与使用说明。
 
+## 点云 3D 可视化
+
+![3D 点云图](pointcloud_3d.png)
+
+Mid-360 建图得到的 3D 点云（降采样后，按高度着色）。用 `pcl_viewer ../scans_voxel*.pcd` 或 CloudCompare 打开查看。
+
 ## 目录文件
 
 | 文件 | 说明 |
@@ -10,8 +16,9 @@ Livox Mid-360 点云 → **2D 占据格栅地图** 的最终产物与使用说�
 | `map.yaml` | 地图配置：分辨率、原点、阈值（供 map_server / 发布节点读取） |
 | `map_preview.png` / `map_preview.jpg` | 地图预览图（黑=墙/障碍，白=可通行） |
 | `map_clear.png` | 放大 3 倍的彩色预览图，直观查看用 |
-| `scans_height.pcd` | Z 轴直通滤波后的中间点云（可删，仅存档） |
-| 其余 `preview_*.png`、`map_small.png`、`map_check.png` | 调试过程图，可删 |
+| `pointcloud_3d.png` | 3D 点云截图（见上文「点云 3D 可视化」） |
+| `scans_height.pcd` | Z 轴直通滤波后的中间点云（未上传，超过 GitHub 100MB 限制，仅存档） |
+| 其余 `preview_*.png`、`map_small.png`、`map_check.png` | 调试过程图 |
 
 上级目录 `../`（`PCD/`）里是点云中间产物：`scans.pcd`（原始）→ `scans_filtered_bin.pcd`（SOR 清洗）→ `scans_voxel*.pcd`（体素降采样）。
 
