@@ -1,0 +1,12 @@
+# ROS2 构建产物
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# 大型点云中间文件（体积大，不入库）
+*.pcd
+*.bag
